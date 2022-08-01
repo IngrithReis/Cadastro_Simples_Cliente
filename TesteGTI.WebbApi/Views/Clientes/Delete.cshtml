@@ -1,0 +1,75 @@
+﻿@model TesteGTI.WebbApi.Entidades.Cliente
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+
+<h3>Quer mesmo apagar este registro?</h3>
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CPF)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CPF)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RG)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RG)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataExpedicaoRG)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataExpedicaoRG)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OrgaoExpedicaoRG)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OrgaoExpedicaoRG)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UF)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UF)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nascimento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nascimento)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sexo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sexo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EstadoCivil)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EstadoCivil)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Apagar" class="btn btn-danger" /> |
+        <a asp-action="Index">Retornar</a>
+    </form>
+</div>
